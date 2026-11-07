@@ -1,21 +1,182 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Serralheria em São José e Florianópolis | Aço Cruzado</title>
-<meta name="description" content="Serralheria e serviços metálicos sob medida em São José, Florianópolis e região: estruturas, coberturas, escadas e galpões.">
-<link rel="canonical" href="https://xn--ao-cruzado-o6a.com.br/serralheria.html">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/estilo.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Aço Cruzado Estruturas Metálicas","url":"https://xn--ao-cruzado-o6a.com.br/","telephone":"+5548984642618","address":{"@type":"PostalAddress","streetAddress":"R. Matias Nicolau Hoffmann, 81","addressLocality":"São Pedro de Alcântara","addressRegion":"SC","postalCode":"88125-000","addressCountry":"BR"},"areaServed":["São José","Florianópolis"]}</script>
-</head><body>
-<header><div class="wrap"><a href="/" class="logo">AÇO CRUZADO</a><a class="btn" data-wa="Olá! Gostaria de solicitar um orçamento de serralheria." href="#">Orçamento</a></div></header>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serralheria em São José, Florianópolis e Biguaçu | Aço Cruzado</title>
+<meta name="description" content="Serralheria sob medida: portões, grades, corrimãos, guarda-corpos, portas de ferro e pergolados. Aço Cruzado, São Pedro de Alcântara - SC. Peça seu orçamento pelo WhatsApp.">
+<link rel="canonical" href="https://www.aço-cruzado.com.br/serralheria.html">
+<style>
+  :root{
+    --aco:#1d2125;
+    --aco-claro:#2b3138;
+    --laranja:#f26a1b;
+    --laranja-escuro:#d95a10;
+    --texto:#f3f1ee;
+    --texto-suave:#c9c6c1;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--texto);
+    background:var(--aco);
+    line-height:1.6;
+    padding-bottom:76px;
+  }
+  /* foto fixa de fundo na página inteira */
+  body::before{
+    content:"";
+    position:fixed;inset:0;z-index:-2;
+    background:var(--aco) url("serralheria-fundo.jpg") center/cover no-repeat;
+  }
+  body::after{
+    content:"";
+    position:fixed;inset:0;z-index:-1;
+    background:rgba(20,22,25,.72);
+  }
+  a{color:inherit}
+  .topo{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 20px;
+    background:rgba(20,22,25,.85);
+    position:sticky;top:0;z-index:10;
+  }
+  .topo a.logo{font-weight:800;font-size:1.1rem;text-decoration:none;letter-spacing:.3px}
+  .topo a.voltar{font-size:.95rem;text-decoration:none;color:var(--texto-suave)}
+  .topo a.voltar:hover{color:#fff}
+  main{max-width:960px;margin:0 auto;padding:0 20px}
+  .capa{padding:64px 0 40px}
+  .capa h1{
+    font-size:clamp(2rem,6vw,3.2rem);
+    line-height:1.1;
+    max-width:14ch;
+    margin-bottom:16px;
+  }
+  .capa p{max-width:58ch;color:var(--texto-suave);font-size:1.05rem;margin-bottom:26px}
+  .botoes{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{
+    display:inline-block;padding:14px 22px;border-radius:6px;
+    font-weight:700;text-decoration:none;font-size:1rem;
+  }
+  .btn-principal{background:var(--laranja);color:#fff}
+  .btn-principal:hover{background:var(--laranja-escuro)}
+  .btn-contorno{border:2px solid rgba(255,255,255,.55);color:#fff}
+  .btn-contorno:hover{background:rgba(255,255,255,.12)}
+  section{padding:36px 0}
+  h2{font-size:1.6rem;margin-bottom:18px}
+  .lista{
+    display:grid;gap:12px;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  }
+  .item{
+    background:rgba(43,49,56,.88);
+    border-left:4px solid var(--laranja);
+    padding:16px 18px;border-radius:4px;
+  }
+  .item strong{display:block;margin-bottom:4px;font-size:1.05rem}
+  .item span{color:var(--texto-suave);font-size:.95rem}
+  .galeria{
+    display:grid;gap:10px;
+    grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  }
+  .galeria img,.galeria video{
+    width:100%;height:210px;object-fit:cover;border-radius:6px;background:var(--aco-claro);
+  }
+  .texto-local{max-width:62ch;color:var(--texto-suave)}
+  .chamada{
+    background:rgba(43,49,56,.92);
+    border-radius:8px;padding:28px 22px;text-align:center;margin:20px 0 40px;
+  }
+  .chamada h2{margin-bottom:8px}
+  .chamada p{color:var(--texto-suave);margin-bottom:18px}
+  footer{
+    text-align:center;padding:26px 20px 30px;color:var(--texto-suave);font-size:.9rem;
+    background:rgba(20,22,25,.85);
+  }
+  /* barra fixa Ligar / WhatsApp */
+  .barra{
+    position:fixed;left:0;right:0;bottom:0;z-index:20;
+    display:flex;gap:10px;padding:10px 12px;
+    background:rgba(20,22,25,.95);
+  }
+  .barra a{
+    flex:1;text-align:center;padding:13px 10px;border-radius:6px;
+    font-weight:700;text-decoration:none;color:#fff;
+  }
+  .barra .ligar{background:var(--aco-claro);border:1px solid rgba(255,255,255,.3)}
+  .barra .zap{background:#1faa59}
+  a:focus-visible,.btn:focus-visible{outline:3px solid #fff;outline-offset:2px}
+  @media (min-width:700px){
+    .barra{max-width:520px;left:50%;right:auto;transform:translateX(-50%);border-radius:10px 10px 0 0}
+  }
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <a class="logo" href="index.html">Aço Cruzado</a>
+  <a class="voltar" href="index.html">Voltar ao início</a>
+</header>
+
 <main>
-<div class="hero"><div class="wrap"><span class="kicker">PROJETO • FABRICAÇÃO • MONTAGEM</span><h1>Serralheria em São José e Florianópolis</h1><p>Serralheria e serviços metálicos sob medida em São José, Florianópolis e região: estruturas, coberturas, escadas e galpões.</p><a class="btn" data-wa="Olá! Gostaria de solicitar um orçamento de serralheria." href="#">Solicitar orçamento</a></div></div>
-<section><div class="wrap"><h2>Serralheria sob medida</h2><p>A Aço Cruzado atua com serralheria e serviços metálicos sob medida, com projeto, fabricação e montagem.</p><p>Atendemos São José, Florianópolis e cidades do entorno e, dependendo do projeto, também fora de Santa Catarina.</p></div></section>
-<section><div class="wrap"><h2>O que fazemos</h2><ul><li>Estruturas metálicas sob medida</li><li>Galpões e coberturas metálicas</li><li>Escadas e mezaninos metálicos</li><li>Fabricação e montagem com equipe própria</li><li>Orçamento conforme a necessidade do cliente</li></ul></div></section>
-<section><div class="wrap"><h2>Onde atendemos</h2><p>Atendemos São José, Florianópolis e cidades do entorno. Dependendo do projeto, também atendemos fora de Santa Catarina.</p></div></section>
-<section class="cta"><div class="wrap"><h2>Vamos tirar seu projeto do papel?</h2><p>Fale com a Aço Cruzado e solicite um orçamento.</p><a class="btn" data-wa="Olá! Gostaria de solicitar um orçamento de serralheria." href="#">Chamar no WhatsApp</a></div></section>
-<section><div class="wrap"><h2>Outros serviços</h2><div class="links"><a href="/galpoes-metalicos.html">Galpões Metálicos</a><a href="/estruturas-metalicas.html">Estruturas Metálicas</a><a href="/coberturas-metalicas.html">Coberturas Metálicas</a><a href="/mezaninos.html">Mezaninos Metálicos</a><a href="/escadas-metalicas.html">Escadas Metálicas</a><a href="/">Página inicial</a></div></div></section>
+
+  <div class="capa">
+    <h1>Serralheria sob medida</h1>
+    <p>Portões, grades, corrimãos, guarda-corpos e portas de ferro feitos para a sua obra, com solda bem acabada, pintura resistente e instalação no local.</p>
+    <div class="botoes">
+      <a class="btn btn-principal" href="https://wa.me/5548984642618?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20serralheria." target="_blank" rel="noopener">Solicitar orçamento</a>
+      <a class="btn btn-contorno" href="tel:+5548984642618">Ligar agora</a>
+    </div>
+  </div>
+
+  <section>
+    <h2>O que fazemos</h2>
+    <div class="lista">
+      <div class="item"><strong>Portões</strong><span>Basculante, de correr, de giro e de enrolar, com ou sem automação.</span></div>
+      <div class="item"><strong>Grades e esquadrias</strong><span>Proteção para janelas, portas e áreas externas.</span></div>
+      <div class="item"><strong>Corrimãos e guarda-corpos</strong><span>Para escadas, sacadas e mezaninos, dentro das normas de segurança.</span></div>
+      <div class="item"><strong>Portas de ferro</strong><span>Portas de entrada, pivotantes e combinadas com madeira.</span></div>
+      <div class="item"><strong>Pergolados e coberturas leves</strong><span>Estrutura metálica para garagens, varandas e áreas de lazer.</span></div>
+      <div class="item"><strong>Peças sob medida</strong><span>Mesas, bancadas, prateleiras e outros projetos em aço.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Trabalhos realizados</h2>
+    <div class="galeria">
+      <!-- Troque os nomes abaixo pelos nomes das suas fotos no GitHub -->
+      <img src="serralheria-1.jpg" alt="Serralheria feita pela Aço Cruzado" loading="lazy" onerror="this.remove()">
+      <img src="serralheria-2.jpg" alt="Portão de ferro feito pela Aço Cruzado" loading="lazy" onerror="this.remove()">
+      <img src="serralheria-3.jpg" alt="Guarda-corpo metálico feito pela Aço Cruzado" loading="lazy" onerror="this.remove()">
+      <img src="serralheria-4.jpg" alt="Porta de ferro feita pela Aço Cruzado" loading="lazy" onerror="this.remove()">
+      <!-- Para colocar um vídeo, tire as marcas de comentário da linha abaixo:
+      <video src="serralheria-video.mp4" controls playsinline preload="metadata"></video>
+      -->
+    </div>
+  </section>
+
+  <section>
+    <h2>Onde atendemos</h2>
+    <p class="texto-local">Nossa oficina fica em São Pedro de Alcântara - SC. Atendemos São José, Florianópolis, Biguaçu e cidades da região, e, dependendo do projeto, também outros estados.</p>
+  </section>
+
+  <div class="chamada">
+    <h2>Precisa de serralheria?</h2>
+    <p>Envie as medidas ou uma foto do local e receba seu orçamento.</p>
+    <a class="btn btn-principal" href="https://wa.me/5548984642618?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20serralheria." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </div>
+
 </main>
-<footer><div class="wrap"><p><strong>Aço Cruzado Estruturas Metálicas</strong></p><p>R. Matias Nicolau Hoffmann, 81 — Boa Parada, São Pedro de Alcântara - SC, 88125-000</p><p>acocruzado@gmail.com · CNPJ 33.502.811/0001-40</p></div></footer>
-<script>document.querySelectorAll("[data-wa]").forEach(function(a){a.href="https://wa.me/5548984642618?text="+encodeURIComponent(a.dataset.wa)});</script>
-</body></html>
+
+<footer>
+  Aço Cruzado Estruturas Metálicas · São Pedro de Alcântara - SC · (48) 98464-2618
+</footer>
+
+<nav class="barra" aria-label="Contato rápido">
+  <a class="ligar" href="tel:+5548984642618">Ligar</a>
+  <a class="zap" href="https://wa.me/5548984642618?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20serralheria." target="_blank" rel="noopener">WhatsApp</a>
+</nav>
+
+</body>
+</html>
